@@ -12,8 +12,8 @@ My repository for following along with O'Reilly's *Learning Test-Driven Developm
 ## quickstart
 
 ```bash
-source env.sh && echo "set up shell"
-tddgo         && echo "test Go"
+source envrc && echo "set up shell"
+tddgo   && echo "test Go"
 tddjs         && echo "test JavaScript"
 tddpy -v      && echo "test Python"
 tdd           && echo "run all tests"

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+# TDD Project envvars and aliases
 
 TDD_PROJECT_ROOT=~/git/tdd-project
 GO111MODULE=on
