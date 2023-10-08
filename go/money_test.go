@@ -12,9 +12,9 @@ func assertEqual(t *testing.T, expected s.Money, actual s.Money) {
 }
 
 func TestMultiplication(t *testing.T) {
-	fiver := s.NewMoney(5, "USD")
-	actualResult := fiver.Times(2)
-	expectedResult := s.NewMoney(10, "USD")
+	tenEuros := s.NewMoney(10, "EUR")
+	actualResult := tenEuros.Times(2)
+	expectedResult := s.NewMoney(20, "EUR")
 	assertEqual(t, expectedResult, actualResult)
 }
 
