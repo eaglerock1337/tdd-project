@@ -22,5 +22,5 @@ jobs:
       run: |
         export GO111MODULE="on"
         export GOPATH=""
-        go test -v -shuffle on ./...
+        cd go && go test -v -shuffle on ./...
       shell: bash
