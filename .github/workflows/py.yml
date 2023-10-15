@@ -2,9 +2,7 @@ name: Python CI
 on:
   push:
     branches: [ main ]
-    paths:
-    - .github/workflows/py.yml
-    - py/**
+    paths: ['**/py.yml', '**.py']
 
 jobs:
   build:

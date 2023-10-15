@@ -2,9 +2,7 @@ name: JavaScript CI
 on:
   push:
     branches: [ main ]
-    paths:
-    - .github/workflows/js.yml
-    - js/**
+    paths: ['**/js.yml', '**.js']
 
 jobs:
   build:
