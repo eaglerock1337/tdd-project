@@ -4,7 +4,7 @@ TDD_PROJECT_ROOT=~/git/tdd-project
 GO111MODULE=on
 GOPATH=""
 
-alias tddgo='cd $TDD_PROJECT_ROOT/go && go test -v'
+alias tddgo='cd $TDD_PROJECT_ROOT/go && go test -v -shuffle on ./...'
 alias tddjs='cd $TDD_PROJECT_ROOT/js && node test_money.js'
-alias tddpy='cd $TDD_PROJECT_ROOT/py && python3 test_money.py'
+alias tddpy='cd $TDD_PROJECT_ROOT/py && pytest -v --random-order'
 alias tdd='tddgo && echo && tddjs && echo && tddpy -v'
